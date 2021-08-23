@@ -1,0 +1,161 @@
+.anounced-num{
+    margin-top:40px;
+    font-size: 30px;
+    background-color: red;
+    height:40px;
+    padding:10px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    animation: bounce 4s infinite;
+    transition: all 4s ease-in-out ;
+}
+
+@keyframes bounce {
+   0% {
+     transform: scale(1);
+    }
+   50%{
+        transform: scale(1.5);
+
+    }
+    100%{
+            transform: scale(1);
+           }  
+}
+.anounced-list{
+    margin-top:30px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30em;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding:20px;
+    background-color: blueviolet;
+}
+.searchlabel{
+    font-weight: 800;
+    font-size: smaller;
+    display: block;
+    margin-top:20px;
+    margin-bottom: -20px;
+}
+.btn-board{
+    width: 9%;
+    border:none;
+    padding:4px;
+    outline:none;
+    margin:1%;    
+    text-align: center;
+}
+.winnerboard{
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    justify-content: space-around;
+    margin:0 auto;
+    padding:20px;
+}
+.priceboard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    color:white;
+    padding:20px;
+}
+.board{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.winnerboard > .listElement{
+    color:black;
+    font-size: 30;
+    font-weight: 800;
+}
+.winnerboard > .listElement>button{
+    color:purple;
+    background-color: orange;
+    margin:5px 2px;
+    width: 100%;
+    padding:5px 0;
+}
+.listElement{
+    text-transform: uppercase;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+.popup1{
+    text-align: center;
+    background-color: black;
+    position:absolute;
+    padding-left:20px;
+    padding-right:20px;
+    color:white;
+    width: 90vw;
+    display: flex;
+    font-size: smaller;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.popup{
+    text-align: center;
+    background-color: black;
+    position:absolute;
+    padding-left:20px;
+    padding-right:20px;
+    color:white;
+    width: 90vw;
+    display: flex;
+    font-size: smaller;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.center{
+    text-align: center;
+}
+.gameView{
+    overflow: hidden;
+    max-width: 100%;
+    padding-bottom: 40px;
+    background-color: rgb(237, 230, 230);
+}
+.popup>.message{
+    max-width: 400px;
+}
+.winner{
+    color:red;
+}
+.text-animation{
+    animation: heading 2s infinite ;
+}
+
+@keyframes heading{
+    0%{
+color:blanchedalmond;
+    }
+    40%{
+color: blueviolet;
+    }
+    80%{
+color:brown;
+    }
+    100%{
+color: chartreuse;
+    }
+}
+
+.popup>button{
+    display: block;
+    padding:4px 10px;
+}
